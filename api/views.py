@@ -24,7 +24,7 @@ def findRoute(request):
         data = request.data
         graph = Graph()
         path = graph.dfs(data["station_source"], data["station_destination"])
-        return Response(path if path != 1 else [])
+        return Response(path if path != -1 else [])
 
 
 @api_view(['GET', 'POST'])
