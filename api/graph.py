@@ -1,4 +1,4 @@
-from .models import Station
+from .models import Station ,Station_Link
 
 
 class Graph:
@@ -9,26 +9,19 @@ class Graph:
         self.createMapping()
 
     def createMapping(self):
-        stations = list(Station.objects.all())
-        number_of_stations = len(stations)
-        for idx in range(number_of_stations):
-            station_info = stations[idx]
+        stations_links = Station_Link.objects.all()
+        for station in stations_links.iterator():
             # 'BSKMC' ==> BTS Sukhumvit line Mo Chit
-            station_id = station_info.station_id
+            current_station_id = station.start_station_id
+            station_info = Station.objects.get(station_id=current_station_id)
             # 'Mo Chit'
-            station_name = station_info.station_name
-            if idx == 0:
-                prev_station_name = station_name
-                prev_station_id = station_id
-            # Change of line i.e. Sukhumvit line to Silom line
-            elif prev_station_id[:3] != station_id[:3]:
-                prev_station_id = station_id
-                prev_station_name = station_name
-            else:
-                self.addEdge(prev_station_name, station_name)
-                self.addEdge(station_name, prev_station_name)
-                prev_station_name = station_name
-                prev_station_id = station_id
+            current_station_name = station_info.station_name
+
+            next_station_id = station.end_station_id
+            station_info = Station.objects.get(station_id=next_station_id)
+            next_station_name = station_info.station_name
+            self.addEdge(current_station_name, next_station_name)
+            self.addEdge(next_station_name, current_station_name)
 
     def addEdge(self, current_node, next_node):
         if current_node not in self.graph:
