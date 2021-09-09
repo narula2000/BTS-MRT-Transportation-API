@@ -1,4 +1,4 @@
-from .models import Station ,Station_Link
+from .models import Station, Station_Link
 
 
 class Graph:
@@ -11,15 +11,13 @@ class Graph:
     def createMapping(self):
         stations_links = Station_Link.objects.all()
         for station in stations_links.iterator():
-            # 'BSKMC' ==> BTS Sukhumvit line Mo Chit
             current_station_id = station.start_station_id
-            station_info = Station.objects.get(station_id=current_station_id)
-            # 'Mo Chit'
-            current_station_name = station_info.station_name
-
+            current_station_info = Station.objects.get(
+                station_id=current_station_id)
+            current_station_name = current_station_info.station_name
             next_station_id = station.end_station_id
-            station_info = Station.objects.get(station_id=next_station_id)
-            next_station_name = station_info.station_name
+            next_station_info = Station.objects.get(station_id=next_station_id)
+            next_station_name = next_station_info.station_name
             self.addEdge(current_station_name, next_station_name)
             self.addEdge(next_station_name, current_station_name)
 

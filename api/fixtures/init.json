@@ -487,7 +487,7 @@
         "pk": "001",
         "fields": {
             "start_station_id": "BSKMC",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKSK"
         }
     },
     {
@@ -495,23 +495,23 @@
         "pk": "002",
         "fields": {
             "start_station_id": "BSKSK",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKAR"
         }
     },
     {
         "model": "api.station_link",
         "pk": "003",
         "fields": {
-            "start_station_id": "BSKSP",
-            "end_station_id": "BSKBR"
+            "start_station_id": "BSKAR",
+            "end_station_id": "BSKSP"
         }
     },
     {
         "model": "api.station_link",
         "pk": "004",
         "fields": {
-            "start_station_id": "BSKAR",
-            "end_station_id": "BSKBR"
+            "start_station_id": "BSKSP",
+            "end_station_id": "BSKVM"
         }
     },
     {
@@ -519,7 +519,7 @@
         "pk": "005",
         "fields": {
             "start_station_id": "BSKVM",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKPT"
         }
     },
     {
@@ -527,7 +527,7 @@
         "pk": "006",
         "fields": {
             "start_station_id": "BSKPT",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKRW"
         }
     },
     {
@@ -535,7 +535,7 @@
         "pk": "007",
         "fields": {
             "start_station_id": "BSKRW",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKSM"
         }
     },
     {
@@ -543,7 +543,7 @@
         "pk": "008",
         "fields": {
             "start_station_id": "BSKSM",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKPC"
         }
     },
     {
@@ -551,7 +551,7 @@
         "pk": "009",
         "fields": {
             "start_station_id": "BSKPC",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKNN"
         }
     },
     {
@@ -559,7 +559,7 @@
         "pk": "010",
         "fields": {
             "start_station_id": "BSKNN",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKAS"
         }
     },
     {
@@ -567,7 +567,7 @@
         "pk": "011",
         "fields": {
             "start_station_id": "BSKAS",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKPP"
         }
     },
     {
@@ -575,7 +575,7 @@
         "pk": "012",
         "fields": {
             "start_station_id": "BSKPP",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKTL"
         }
     },
     {
@@ -583,7 +583,7 @@
         "pk": "013",
         "fields": {
             "start_station_id": "BSKTL",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKEK"
         }
     },
     {
@@ -591,7 +591,7 @@
         "pk": "014",
         "fields": {
             "start_station_id": "BSKEK",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKPK"
         }
     },
     {
@@ -599,7 +599,7 @@
         "pk": "015",
         "fields": {
             "start_station_id": "BSKPK",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKON"
         }
     },
     {
@@ -607,7 +607,7 @@
         "pk": "016",
         "fields": {
             "start_station_id": "BSKON",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKBC"
         }
     },
     {
@@ -615,7 +615,7 @@
         "pk": "017",
         "fields": {
             "start_station_id": "BSKBC",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKPW"
         }
     },
     {
@@ -623,7 +623,7 @@
         "pk": "018",
         "fields": {
             "start_station_id": "BSKPW",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKUS"
         }
     },
     {
@@ -631,7 +631,7 @@
         "pk": "019",
         "fields": {
             "start_station_id": "BSKUS",
-            "end_station_id": "BSKBR"
+            "end_station_id": "BSKBN"
         }
     },
     {
@@ -655,7 +655,7 @@
         "pk": "022",
         "fields": {
             "start_station_id": "BSLNS",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLSM"
         }
     },
     {
@@ -663,7 +663,7 @@
         "pk": "023",
         "fields": {
             "start_station_id": "BSLSM",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLRD"
         }
     },
     {
@@ -671,7 +671,7 @@
         "pk": "024",
         "fields": {
             "start_station_id": "BSLRD",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLSD"
         }
     },
     {
@@ -679,7 +679,7 @@
         "pk": "025",
         "fields": {
             "start_station_id": "BSLSD",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLCN"
         }
     },
     {
@@ -687,7 +687,7 @@
         "pk": "026",
         "fields": {
             "start_station_id": "BSLCN",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLSR"
         }
     },
     {
@@ -695,7 +695,7 @@
         "pk": "027",
         "fields": {
             "start_station_id": "BSLSR",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLST"
         }
     },
     {
@@ -703,7 +703,7 @@
         "pk": "028",
         "fields": {
             "start_station_id": "BSLST",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLKT"
         }
     },
     {
@@ -711,7 +711,7 @@
         "pk": "029",
         "fields": {
             "start_station_id": "BSLKT",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLWY"
         }
     },
     {
@@ -719,7 +719,7 @@
         "pk": "030",
         "fields": {
             "start_station_id": "BSLWY",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLPN"
         }
     },
     {
@@ -727,7 +727,7 @@
         "pk": "031",
         "fields": {
             "start_station_id": "BSLPN",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLTP"
         }
     },
     {
@@ -735,7 +735,7 @@
         "pk": "032",
         "fields": {
             "start_station_id": "BSLTP",
-            "end_station_id": "BSLBW"
+            "end_station_id": "BSLWK"
         }
     },
     {
@@ -759,7 +759,7 @@
         "pk": "035",
         "fields": {
             "start_station_id": "MBLHL",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLSY"
         }
     },
     {
@@ -767,7 +767,7 @@
         "pk": "036",
         "fields": {
             "start_station_id": "MBLSY",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLSL"
         }
     },
     {
@@ -775,7 +775,7 @@
         "pk": "037",
         "fields": {
             "start_station_id": "MBLSL",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLLM"
         }
     },
     {
@@ -783,7 +783,7 @@
         "pk": "038",
         "fields": {
             "start_station_id": "MBLLM",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLKT"
         }
     },
     {
@@ -791,7 +791,7 @@
         "pk": "039",
         "fields": {
             "start_station_id": "MBLKT",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLQS"
         }
     },
     {
@@ -799,7 +799,7 @@
         "pk": "040",
         "fields": {
             "start_station_id": "MBLQS",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLSK"
         }
     },
     {
@@ -807,7 +807,7 @@
         "pk": "041",
         "fields": {
             "start_station_id": "MBLSK",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLPB"
         }
     },
     {
@@ -815,7 +815,7 @@
         "pk": "042",
         "fields": {
             "start_station_id": "MBLPB",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLPR"
         }
     },
     {
@@ -823,7 +823,7 @@
         "pk": "043",
         "fields": {
             "start_station_id": "MBLPR",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLTC"
         }
     },
     {
@@ -831,7 +831,7 @@
         "pk": "044",
         "fields": {
             "start_station_id": "MBLTC",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLHK"
         }
     },
     {
@@ -839,7 +839,7 @@
         "pk": "045",
         "fields": {
             "start_station_id": "MBLHK",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLSS"
         }
     },
     {
@@ -847,7 +847,7 @@
         "pk": "046",
         "fields": {
             "start_station_id": "MBLSS",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLRP"
         }
     },
     {
@@ -855,7 +855,7 @@
         "pk": "047",
         "fields": {
             "start_station_id": "MBLRP",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLLP"
         }
     },
     {
@@ -863,7 +863,7 @@
         "pk": "048",
         "fields": {
             "start_station_id": "MBLLP",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLPY"
         }
     },
     {
@@ -871,7 +871,7 @@
         "pk": "049",
         "fields": {
             "start_station_id": "MBLPY",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLCP"
         }
     },
     {
@@ -879,7 +879,7 @@
         "pk": "050",
         "fields": {
             "start_station_id": "MBLCP",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLKP"
         }
     },
     {
@@ -887,7 +887,7 @@
         "pk": "051",
         "fields": {
             "start_station_id": "MBLKP",
-            "end_station_id": "MBLTP"
+            "end_station_id": "MBLBS"
         }
     },
     {
@@ -911,7 +911,7 @@
         "pk": "054",
         "fields": {
             "start_station_id": "MPKKB",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKTB"
         }
     },
     {
@@ -919,7 +919,7 @@
         "pk": "055",
         "fields": {
             "start_station_id": "MPKTB",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKSY"
         }
     },
     {
@@ -927,7 +927,7 @@
         "pk": "056",
         "fields": {
             "start_station_id": "MPKSY",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKBP"
         }
     },
     {
@@ -935,7 +935,7 @@
         "pk": "057",
         "fields": {
             "start_station_id": "MPKBP",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKBR"
         }
     },
     {
@@ -943,7 +943,7 @@
         "pk": "058",
         "fields": {
             "start_station_id": "MPKBR",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKBN"
         }
     },
     {
@@ -951,7 +951,7 @@
         "pk": "059",
         "fields": {
             "start_station_id": "MPKBN",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKSM"
         }
     },
     {
@@ -959,7 +959,7 @@
         "pk": "060",
         "fields": {
             "start_station_id": "MPKSM",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKPN"
         }
     },
     {
@@ -967,7 +967,7 @@
         "pk": "061",
         "fields": {
             "start_station_id": "MPKPN",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKYN"
         }
     },
     {
@@ -975,7 +975,7 @@
         "pk": "062",
         "fields": {
             "start_station_id": "MPKYN",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKBK"
         }
     },
     {
@@ -983,7 +983,7 @@
         "pk": "063",
         "fields": {
             "start_station_id": "MPKBK",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKNC"
         }
     },
     {
@@ -991,7 +991,7 @@
         "pk": "064",
         "fields": {
             "start_station_id": "MPKNC",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKMP"
         }
     },
     {
@@ -999,7 +999,7 @@
         "pk": "065",
         "fields": {
             "start_station_id": "MPKMP",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKYT"
         }
     },
     {
@@ -1007,7 +1007,7 @@
         "pk": "066",
         "fields": {
             "start_station_id": "MPKYT",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKWS"
         }
     },
     {
@@ -1015,7 +1015,7 @@
         "pk": "067",
         "fields": {
             "start_station_id": "MPKWS",
-            "end_station_id": "MPKTP"
+            "end_station_id": "MPKBS"
         }
     },
     {
@@ -1039,7 +1039,7 @@
         "pk": "101",
         "fields": {
             "start_station_id": "BSKMC",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKSK"
         }
     },
     {
@@ -1047,7 +1047,7 @@
         "pk": "102",
         "fields": {
             "start_station_id": "BSKSK",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKSP"
         }
     },
     {
@@ -1055,7 +1055,7 @@
         "pk": "103",
         "fields": {
             "start_station_id": "BSKSP",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKAR"
         }
     },
     {
@@ -1063,7 +1063,7 @@
         "pk": "104",
         "fields": {
             "start_station_id": "BSKAR",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKVM"
         }
     },
     {
@@ -1071,7 +1071,7 @@
         "pk": "105",
         "fields": {
             "start_station_id": "BSKVM",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKPT"
         }
     },
     {
@@ -1079,7 +1079,7 @@
         "pk": "106",
         "fields": {
             "start_station_id": "BSKPT",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKRW"
         }
     },
     {
@@ -1087,7 +1087,7 @@
         "pk": "107",
         "fields": {
             "start_station_id": "BSKRW",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKSM"
         }
     },
     {
@@ -1095,7 +1095,7 @@
         "pk": "108",
         "fields": {
             "start_station_id": "BSKSM",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKPC"
         }
     },
     {
@@ -1103,7 +1103,7 @@
         "pk": "109",
         "fields": {
             "start_station_id": "BSKPC",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKNN"
         }
     },
     {
@@ -1111,7 +1111,7 @@
         "pk": "110",
         "fields": {
             "start_station_id": "BSKNN",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKAS"
         }
     },
     {
@@ -1119,7 +1119,7 @@
         "pk": "111",
         "fields": {
             "start_station_id": "BSKAS",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKPP"
         }
     },
     {
@@ -1127,7 +1127,7 @@
         "pk": "112",
         "fields": {
             "start_station_id": "BSKPP",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKTL"
         }
     },
     {
@@ -1135,7 +1135,7 @@
         "pk": "113",
         "fields": {
             "start_station_id": "BSKTL",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKEK"
         }
     },
     {
@@ -1143,7 +1143,7 @@
         "pk": "114",
         "fields": {
             "start_station_id": "BSKEK",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKPK"
         }
     },
     {
@@ -1151,7 +1151,7 @@
         "pk": "115",
         "fields": {
             "start_station_id": "BSKPK",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKON"
         }
     },
     {
@@ -1159,7 +1159,7 @@
         "pk": "116",
         "fields": {
             "start_station_id": "BSKON",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKBC"
         }
     },
     {
@@ -1167,7 +1167,7 @@
         "pk": "117",
         "fields": {
             "start_station_id": "BSKBC",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKPW"
         }
     },
     {
@@ -1175,7 +1175,7 @@
         "pk": "118",
         "fields": {
             "start_station_id": "BSKPW",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKUS"
         }
     },
     {
@@ -1183,7 +1183,7 @@
         "pk": "119",
         "fields": {
             "start_station_id": "BSKUS",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKBN"
         }
     },
     {
@@ -1191,7 +1191,7 @@
         "pk": "120",
         "fields": {
             "start_station_id": "BSKBN",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKBR"
         }
     },
     {
@@ -1199,7 +1199,7 @@
         "pk": "121",
         "fields": {
             "start_station_id": "BSKBR",
-            "end_station_id": "BSKMC"
+            "end_station_id": "BSKBR"
         }
     },
     {
@@ -1207,7 +1207,7 @@
         "pk": "122",
         "fields": {
             "start_station_id": "BSLNS",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLSM"
         }
     },
     {
@@ -1215,7 +1215,7 @@
         "pk": "123",
         "fields": {
             "start_station_id": "BSLSM",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLRD"
         }
     },
     {
@@ -1223,7 +1223,7 @@
         "pk": "124",
         "fields": {
             "start_station_id": "BSLRD",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLSD"
         }
     },
     {
@@ -1231,7 +1231,7 @@
         "pk": "125",
         "fields": {
             "start_station_id": "BSLSD",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLCN"
         }
     },
     {
@@ -1239,7 +1239,7 @@
         "pk": "126",
         "fields": {
             "start_station_id": "BSLCN",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLSR"
         }
     },
     {
@@ -1247,7 +1247,7 @@
         "pk": "127",
         "fields": {
             "start_station_id": "BSLSR",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLST"
         }
     },
     {
@@ -1255,7 +1255,7 @@
         "pk": "128",
         "fields": {
             "start_station_id": "BSLST",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLKT"
         }
     },
     {
@@ -1263,7 +1263,7 @@
         "pk": "129",
         "fields": {
             "start_station_id": "BSLKT",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLWY"
         }
     },
     {
@@ -1271,7 +1271,7 @@
         "pk": "130",
         "fields": {
             "start_station_id": "BSLWY",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLPN"
         }
     },
     {
@@ -1279,7 +1279,7 @@
         "pk": "131",
         "fields": {
             "start_station_id": "BSLPN",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLTP"
         }
     },
     {
@@ -1287,7 +1287,7 @@
         "pk": "132",
         "fields": {
             "start_station_id": "BSLTP",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLWK"
         }
     },
     {
@@ -1295,7 +1295,7 @@
         "pk": "133",
         "fields": {
             "start_station_id": "BSLWK",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLBW"
         }
     },
     {
@@ -1303,7 +1303,7 @@
         "pk": "134",
         "fields": {
             "start_station_id": "BSLBW",
-            "end_station_id": "BSLNS"
+            "end_station_id": "BSLBW"
         }
     },
     {
@@ -1311,7 +1311,7 @@
         "pk": "135",
         "fields": {
             "start_station_id": "MBLHL",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLSY"
         }
     },
     {
@@ -1319,7 +1319,7 @@
         "pk": "136",
         "fields": {
             "start_station_id": "MBLSY",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLSL"
         }
     },
     {
@@ -1327,7 +1327,7 @@
         "pk": "137",
         "fields": {
             "start_station_id": "MBLSL",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLLM"
         }
     },
     {
@@ -1335,7 +1335,7 @@
         "pk": "138",
         "fields": {
             "start_station_id": "MBLLM",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLKT"
         }
     },
     {
@@ -1343,7 +1343,7 @@
         "pk": "139",
         "fields": {
             "start_station_id": "MBLKT",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLQS"
         }
     },
     {
@@ -1351,7 +1351,7 @@
         "pk": "140",
         "fields": {
             "start_station_id": "MBLQS",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLSK"
         }
     },
     {
@@ -1359,7 +1359,7 @@
         "pk": "141",
         "fields": {
             "start_station_id": "MBLSK",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLPB"
         }
     },
     {
@@ -1367,7 +1367,7 @@
         "pk": "142",
         "fields": {
             "start_station_id": "MBLPB",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLPR"
         }
     },
     {
@@ -1375,7 +1375,7 @@
         "pk": "143",
         "fields": {
             "start_station_id": "MBLPR",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLTC"
         }
     },
     {
@@ -1383,7 +1383,7 @@
         "pk": "144",
         "fields": {
             "start_station_id": "MBLTC",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLHK"
         }
     },
     {
@@ -1391,7 +1391,7 @@
         "pk": "145",
         "fields": {
             "start_station_id": "MBLHK",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLSS"
         }
     },
     {
@@ -1399,7 +1399,7 @@
         "pk": "146",
         "fields": {
             "start_station_id": "MBLSS",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLRP"
         }
     },
     {
@@ -1407,7 +1407,7 @@
         "pk": "147",
         "fields": {
             "start_station_id": "MBLRP",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLLP"
         }
     },
     {
@@ -1415,7 +1415,7 @@
         "pk": "148",
         "fields": {
             "start_station_id": "MBLLP",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLPY"
         }
     },
     {
@@ -1423,7 +1423,7 @@
         "pk": "149",
         "fields": {
             "start_station_id": "MBLPY",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLCP"
         }
     },
     {
@@ -1431,7 +1431,7 @@
         "pk": "150",
         "fields": {
             "start_station_id": "MBLCP",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLKP"
         }
     },
     {
@@ -1439,7 +1439,7 @@
         "pk": "151",
         "fields": {
             "start_station_id": "MBLKP",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLBS"
         }
     },
     {
@@ -1447,7 +1447,7 @@
         "pk": "152",
         "fields": {
             "start_station_id": "MBLBS",
-            "end_station_id": "MBLHL"
+            "end_station_id": "MBLTP"
         }
     },
     {
@@ -1463,7 +1463,7 @@
         "pk": "154",
         "fields": {
             "start_station_id": "MPKKB",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKTB"
         }
     },
     {
@@ -1471,7 +1471,7 @@
         "pk": "155",
         "fields": {
             "start_station_id": "MPKTB",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKSY"
         }
     },
     {
@@ -1479,7 +1479,7 @@
         "pk": "156",
         "fields": {
             "start_station_id": "MPKSY",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKBP"
         }
     },
     {
@@ -1487,7 +1487,7 @@
         "pk": "157",
         "fields": {
             "start_station_id": "MPKBP",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKBR"
         }
     },
     {
@@ -1495,7 +1495,7 @@
         "pk": "158",
         "fields": {
             "start_station_id": "MPKBR",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKBN"
         }
     },
     {
@@ -1503,7 +1503,7 @@
         "pk": "159",
         "fields": {
             "start_station_id": "MPKBN",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKSM"
         }
     },
     {
@@ -1511,7 +1511,7 @@
         "pk": "160",
         "fields": {
             "start_station_id": "MPKSM",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKPN"
         }
     },
     {
@@ -1519,7 +1519,7 @@
         "pk": "161",
         "fields": {
             "start_station_id": "MPKPN",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKYN"
         }
     },
     {
@@ -1527,7 +1527,7 @@
         "pk": "162",
         "fields": {
             "start_station_id": "MPKYN",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKBK"
         }
     },
     {
@@ -1535,7 +1535,7 @@
         "pk": "163",
         "fields": {
             "start_station_id": "MPKBK",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKNC"
         }
     },
     {
@@ -1543,7 +1543,7 @@
         "pk": "164",
         "fields": {
             "start_station_id": "MPKNC",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKMP"
         }
     },
     {
@@ -1551,7 +1551,7 @@
         "pk": "165",
         "fields": {
             "start_station_id": "MPKMP",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKYT"
         }
     },
     {
@@ -1559,7 +1559,7 @@
         "pk": "166",
         "fields": {
             "start_station_id": "MPKYT",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKWS"
         }
     },
     {
@@ -1567,7 +1567,7 @@
         "pk": "167",
         "fields": {
             "start_station_id": "MPKWS",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKBS"
         }
     },
     {
@@ -1575,7 +1575,7 @@
         "pk": "168",
         "fields": {
             "start_station_id": "MPKBS",
-            "end_station_id": "MPKKB"
+            "end_station_id": "MPKTP"
         }
     },
     {
