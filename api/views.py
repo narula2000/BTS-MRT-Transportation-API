@@ -2,9 +2,6 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .graph import Graph
 
-graph = Graph()
-graph.createMapping()
-
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -25,6 +22,7 @@ def findRoute(request):
         return Response(api_info)
     elif request.method == 'POST':
         data = request.data
+        graph = Graph()
         path = graph.dfs(data["station_source"], data["station_destination"])
         return Response(path if path != 1 else [])
 
@@ -39,5 +37,6 @@ def canReach(request):
         return Response(api_info)
     elif request.method == 'POST':
         data = request.data
+        graph = Graph()
         path = graph.dfs(data["station_source"], data["station_destination"])
         return Response(path != -1)
