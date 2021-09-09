@@ -8,6 +8,8 @@ django = ">=3.0"
 psycopg2-binary = ">=2.8"
 
 [dev-packages]
+autopep8 = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.8"
