@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path("", views.apiOverview, name="api-overview"),
-    path("find_route/", views.findRoute, name="find_route"),
-    path("can_reach/", views.canReach, name="can-reach")
+    path("find_route_name/", views.findRouteByName, name="find-route-name"),
+    path("find_route_id/", views.findRouteById, name="find-route-id")
 ]
