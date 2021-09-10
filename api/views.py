@@ -1,12 +1,15 @@
+from api.models import Station
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.exceptions import ParseError
 from .graph import Graph
 
 
 @api_view(['GET'])
 def apiOverview(request):
     api_urls = {
-        'Find Route': '/find_route'
+        'Find Route by Name': '/find_route_name',
+        'Find Route by ID': '/find_route_id'
     }
     return Response(api_urls)
 
@@ -22,7 +25,22 @@ def findRouteByName(request):
     elif request.method == 'POST':
         data = request.data
         graph = Graph()
-        path = graph.dfsByName(data["station_source"], data["station_destination"])
+        try:
+            station_source_name = data["station_source"]
+            station_destination_name = data["station_destination"]
+        except KeyError:
+            raise ParseError("Wrong Key Received")
+        try:
+            Station.objects.get(station_name=station_source_name)
+        except Station.DoesNotExist:
+            raise ParseError(
+                "%s: This station doesn't exist. You might forget _" % (station_source_name))
+        try:
+            Station.objects.get(station_name=station_destination_name)
+        except Station.DoesNotExist:
+            raise ParseError("%s: This station doesn't exist. You might forget _" % (
+                station_destination_name))
+        path = graph.dfsByName(station_source_name, station_destination_name)
         return Response(path if path != -1 else [])
 
 
@@ -37,5 +55,20 @@ def findRouteById(request):
     elif request.method == 'POST':
         data = request.data
         graph = Graph()
-        path = graph.dfsById(data["station_source_id"], data["station_destination_id"])
+        try:
+            station_source_id = data["station_source_id"]
+            station_destination_id = data["station_destination_id"]
+        except KeyError:
+            raise ParseError("Wrong Key Received")
+        try:
+            Station.objects.get(station_id=station_source_id)
+        except Station.DoesNotExist:
+            raise ParseError("%s: This id doesn't exist." %
+                             (station_source_id))
+        try:
+            Station.objects.get(station_id=station_destination_id)
+        except Station.DoesNotExist:
+            raise ParseError("%s: This id doesn't exist." %
+                             (station_destination_id))
+        path = graph.dfsById(station_source_id, station_destination_id)
         return Response(path if path != -1 else [])
