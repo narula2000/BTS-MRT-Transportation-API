@@ -24,7 +24,6 @@ def findRouteByName(request):
         return Response(api_info_name)
     elif request.method == 'POST':
         data = request.data
-        graph = Graph()
         try:
             station_source_name = data["station_source"]
             station_destination_name = data["station_destination"]
@@ -40,6 +39,7 @@ def findRouteByName(request):
         except Station.DoesNotExist:
             raise ParseError("%s: This station doesn't exist. You might forget _" % (
                 station_destination_name))
+        graph = Graph()
         path = graph.dfsByName(station_source_name, station_destination_name)
         return Response(path if path != -1 else [])
 
@@ -54,7 +54,6 @@ def findRouteById(request):
         return Response(api_info_id)
     elif request.method == 'POST':
         data = request.data
-        graph = Graph()
         try:
             station_source_id = data["station_source_id"]
             station_destination_id = data["station_destination_id"]
@@ -70,5 +69,6 @@ def findRouteById(request):
         except Station.DoesNotExist:
             raise ParseError("%s: This id doesn't exist." %
                              (station_destination_id))
+        graph = Graph()
         path = graph.dfsById(station_source_id, station_destination_id)
         return Response(path if path != -1 else [])
