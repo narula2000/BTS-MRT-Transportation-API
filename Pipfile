@@ -7,6 +7,7 @@ name = "pypi"
 django = ">=3.0"
 psycopg2-binary = ">=2.8"
 djangorestframework = "*"
+django-stubs = "*"
 
 [dev-packages]
 autopep8 = "*"
