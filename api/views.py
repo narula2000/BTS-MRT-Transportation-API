@@ -72,3 +72,45 @@ def findRouteById(request):
         graph = Graph()
         path = graph.dfsById(station_source_id, station_destination_id)
         return Response(path if path != -1 else [])
+
+
+@api_view(['GET', 'POST'])
+def getStationNameById(request):
+    if request.method == 'GET':
+        api_info_id = {
+            "station_id": "ID of either MRT or BTS starting station i.e. N08",
+        }
+        return Response(api_info_id)
+    elif request.method == 'POST':
+        data = request.data
+        try:
+            station_id = data["station_id"]
+        except KeyError:
+            raise ParseError("Wrong Key Received")
+        try:
+            station = Station.objects.get(station_id=station_id)
+        except Station.DoesNotExist:
+            raise ParseError("%s: This id doesn't exist." %
+                             (station_id))
+        return Response(station.station_name)
+
+
+@api_view(['GET', 'POST'])
+def getStationIdByName(request):
+    if request.method == 'GET':
+        api_info_id = {
+            "station_name": "Name of either MRT or BTS starting station i.e. Mo_Chit"
+        }
+        return Response(api_info_id)
+    elif request.method == 'POST':
+        data = request.data
+        try:
+            station_name = data["station_name"]
+        except KeyError:
+            raise ParseError("Wrong Key Received")
+        try:
+            station = Station.objects.get(station_id=station_name)
+        except Station.DoesNotExist:
+            raise ParseError("%s: This station doesn't exist. You might forget _" % (
+                station_name))
+        return Response(station.station_id)
