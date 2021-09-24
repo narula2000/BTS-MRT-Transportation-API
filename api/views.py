@@ -1,3 +1,4 @@
+from django.http.response import HttpResponseNotAllowed
 from rest_framework.decorators import api_view
 from rest_framework.exceptions import ParseError
 from rest_framework.response import Response
@@ -9,13 +10,16 @@ from .graph import Graph
 
 @api_view(['GET'])
 def apiOverview(request):
-    api_urls = {
-        'Find Route by Name': '/find_route_name',
-        'Find Route by ID': '/find_route_id',
-        'Get Station Name by ID': '/get_station_name',
-        'Get Station ID by Name': '/get_station_id'
-    }
-    return Response(api_urls)
+    if request.method == 'GET':
+        api_urls = {
+            'Find Route by Name': '/find_route_name',
+            'Find Route by ID': '/find_route_id',
+            'Get Station Name by ID': '/get_station_name',
+            'Get Station ID by Name': '/get_station_id'
+        }
+        return Response(api_urls)
+    else:
+        return HttpResponseNotAllowed("Please use GET method", status=405)
 
 
 @api_view(['GET', 'POST'])
