@@ -1,11 +1,12 @@
+from typing import Dict
+
 from django.http.response import HttpResponseNotAllowed
 from rest_framework.decorators import api_view
 from rest_framework.exceptions import ParseError
 from rest_framework.response import Response
 
-from api.models import Station
-
 from .graph import Graph
+from .models import Station
 
 
 @api_view(['GET'])
@@ -31,7 +32,7 @@ def findRouteByName(request):
         }
         return Response(api_info_name)
     elif request.method == 'POST':
-        data = request.data
+        data: Dict[str, str] = request.data
         try:
             station_source_name = data["station_source"]
             station_destination_name = data["station_destination"]
@@ -61,7 +62,7 @@ def findRouteById(request):
         }
         return Response(api_info_id)
     elif request.method == 'POST':
-        data = request.data
+        data: Dict[str, str] = request.data
         try:
             station_source_id = data["station_source_id"]
             station_destination_id = data["station_destination_id"]
@@ -90,7 +91,7 @@ def getStationNameById(request):
         }
         return Response(api_info_id)
     elif request.method == 'POST':
-        data = request.data
+        data: Dict[str, str] = request.data
         try:
             station_id = data["station_id"]
         except KeyError:
@@ -111,7 +112,7 @@ def getStationIdByName(request):
         }
         return Response(api_info_id)
     elif request.method == 'POST':
-        data = request.data
+        data: Dict[str, str] = request.data
         try:
             station_name = data["station_name"]
         except KeyError:
