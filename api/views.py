@@ -9,7 +9,9 @@ from .graph import Graph
 def apiOverview(request):
     api_urls = {
         'Find Route by Name': '/find_route_name',
-        'Find Route by ID': '/find_route_id'
+        'Find Route by ID': '/find_route_id',
+        'Get Station Name by ID': 'get_station_name/',
+        'Get Station ID by Name': 'get_station_id/'
     }
     return Response(api_urls)
 
