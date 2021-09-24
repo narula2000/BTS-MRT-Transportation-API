@@ -111,7 +111,7 @@ def getStationIdByName(request):
         except KeyError:
             raise ParseError("Wrong Key Received")
         try:
-            station = Station.objects.get(station_id=station_name)
+            station = Station.objects.get(station_name=station_name)
         except Station.DoesNotExist:
             raise ParseError("%s: This station doesn't exist. You might forget _" % (
                 station_name))
